@@ -1,0 +1,8 @@
+记录:
+移动端h5页面上传视频
+
+  使用普通input标签 然后onChange时候触发函数 拿到files[0]
+
+与后端交互有两种方法。
+1.使用formdata对象  append拿到的files[0]二进制文件 传给后端
+2.使用Filereader读出base64编码 传给后端
