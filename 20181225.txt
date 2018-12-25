@@ -1,0 +1,33 @@
+less文件组织
+
+
+less文件夹下:
+
+1.base.less:
+
+.ilblock{
+  display:inline-block; 
+}
+
+.positionA{
+  position:absolute;
+}
+
+...
+
+.createMT(@n){
+   .mt@{n}{
+    margin-top:@n;
+  }
+}
+
+.createMT(2px)
+...
+
+2.reset.less
+里面是清除浏览器默认样式的
+
+3.main.less
+
+@import "base"
+@import "reset"
