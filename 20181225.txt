@@ -17,11 +17,11 @@ lessÎÄ¼ş¼ĞÏÂ:
 
 .createMT(@n){
    .mt@{n}{
-    margin-top:@n;
+    margin-top:@n*1px;
   }
 }
 
-.createMT(2px)
+.createMT(2)
 ...
 
 2.reset.less
