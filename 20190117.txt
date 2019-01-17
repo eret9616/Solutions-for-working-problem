@@ -1,0 +1,16 @@
+escape
+encodeURI
+encodeURIComponent的区别:
+
+根据mdn文档描述,escapse这个api是弃用的，(deprecated
+作用: 处理一段字符,将一些特殊字符(如中文...  转换为16进制转义序列
+(既然都deprecated了，咱就不研究怎么用了也不要用了
+
+encodeURI:
+如果你想使用一段URI，那你就encodeURI(str) 最后拿到这个URI来用
+
+encodeURIComponent:
+如果你需要一段URIComponent 最后加上你自己的URI开头合成一段完整的URI来使用，
+那么就encodeURIComponent(str) 最后合并到一起并拿URI使用
+
+encodeURIComponent相比encodeURI会转义更多的字符,如'/'
