@@ -1,0 +1,25 @@
+h5∏¥÷∆µΩºÙ«–∞Â:
+
+    clipboard(val) {
+        let result = 0;
+        let textArea = document.createElement('textArea');
+        textArea.value = val;
+        document.body.appendChild(textArea);
+
+        if (navigator.userAgent.match(/ipad|iphone/i)) {
+            let range = document.createRange();
+            range.selectNodeContents(textArea);
+            let selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            textArea.setSelectionRange(0, 999999);
+        } else {
+            textArea.select();
+        }
+
+        try { document.execCommand("Copy") && (result = 1) } catch (err) { }
+        document.body.removeChild(textArea);
+
+        return result;
+    },
+
