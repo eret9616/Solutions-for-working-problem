@@ -1,2 +1,2 @@
 两侧span中间input，想用flex布局自适应input输入框的宽度，
-因为input标签存在默认长度,必须设定一个input长度,此时flex布局可以拉宽input标签,不能缩短input标签
+因为input标签存在默认长度,必须设定一个input长度,(如1px)此时flex布局可以拉宽input标签,不能缩短input标签
