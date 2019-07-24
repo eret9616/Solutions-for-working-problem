@@ -33,6 +33,7 @@ el:last-child 的匹配规则是：第一步，查找 el 选择器匹配元素�
 
 顺便提一下 :last-of-type 这个伪类，在这里是可以用的。
 
+el:last-of-type的匹配规则是:查找 el 选择器匹配元素的所有同级元素（siblings）,查找和el同type的元素中的最后一个元素(type指的是元素类型),检验最后一个元素类型是否与选贼器el匹配
  
 
 但是last-of-type的规则也是要注意的,如果遇到这种情况:
@@ -40,15 +41,20 @@ el:last-child 的匹配规则是：第一步，查找 el 选择器匹配元素�
  
 
 <div>
+    <div class='a'>
+        1
+    </div>
+    <div class='a'>
+        2
+    </div>
 
-  <div class='a'>
+    <div class='a'>
+        3
+    </div>
 
-  <div class='a'>
-
-  <div class='a'>
-
-  <div class='b'>
-
+    <div class='b'>
+        4
+    </div>
 </div>
 
  
