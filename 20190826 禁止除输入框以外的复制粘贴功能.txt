@@ -6,7 +6,7 @@ function handler(e) {
 
     if (e.target.tagName !== 'INPUT') {
      window.getSelection().empty() 
-     copytext = '��ֹճ��'
+     copytext = '禁止粘贴'
 
     }else{
 
@@ -17,7 +17,7 @@ function handler(e) {
         clipdata.setData('Text', copytext);
     }
 }
-// ��ֹճ���¼�
+// 禁止除输入框以外的复制粘贴功能
 document.addEventListener('copy', handler)
 
 
