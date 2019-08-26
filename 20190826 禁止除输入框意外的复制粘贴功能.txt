@@ -1,0 +1,23 @@
+function handler(e) {
+    e.preventDefault();
+	
+    let copytext
+    let clipdata = e.clipboardData || window.clipboardData;
+
+    if (e.target.tagName !== 'INPUT') {
+     window.getSelection().empty() 
+     copytext = '½ûÖ¹Õ³Ìù'
+
+    }else{
+
+     copytext =  window.getSelection()	
+   }
+    
+    if (clipdata) {
+        clipdata.setData('Text', copytext);
+    }
+}
+// ½ûÖ¹Õ³ÌùÊÂ¼þ
+document.addEventListener('copy', handler)
+
+
