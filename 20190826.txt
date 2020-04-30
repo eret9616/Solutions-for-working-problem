@@ -1,3 +1,5 @@
+// 禁止除输入框以外的复制粘贴功能
+
 function handler(e) {
     e.preventDefault();
 	
@@ -17,7 +19,7 @@ function handler(e) {
         clipdata.setData('Text', copytext);
     }
 }
-// 禁止除输入框以外的复制粘贴功能
+
 document.addEventListener('copy', handler)
 
 
