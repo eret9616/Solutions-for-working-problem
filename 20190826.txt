@@ -1,4 +1,4 @@
-// 禁止除输入框以外的复制粘贴功能
+// 禁止除输入框以外的所有元素的复制功能
 
 function handler(e) {
     e.preventDefault();
@@ -8,12 +8,10 @@ function handler(e) {
 
     if (e.target.tagName !== 'INPUT') {
      window.getSelection().empty() 
-     copytext = '禁止粘贴'
-
+     copytext = '禁止赋值'
     }else{
-
      copytext =  window.getSelection()	
-   }
+    }
     
     if (clipdata) {
         clipdata.setData('Text', copytext);

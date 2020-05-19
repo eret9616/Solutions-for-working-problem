@@ -1,6 +1,7 @@
-h5¸´ÖÆµ½¼ôÇĞ°å:
+h5å¤åˆ¶åˆ°å‰ªåˆ‡æ¿ï¼š
 
-    clipboard(val) {
+    function clipboard(val) {
+
         let result = 0;
         let textArea = document.createElement('textArea');
         textArea.value = val;
@@ -21,5 +22,5 @@ h5¸´ÖÆµ½¼ôÇĞ°å:
         document.body.removeChild(textArea);
 
         return result;
-    },
+    }
 
